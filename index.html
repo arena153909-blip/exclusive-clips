@@ -1,15 +1,21 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Video Gallery</title>
+    <style>
         html, body {
-            touch-action: pan-y;
+            touch-action: pan-y; /* ডাবল ট্যাপ জুম বন্ধ করবে */
             margin: 0;
             padding: 0;
             overflow-x: hidden;
             width: 100%;
-            background-color: #000; /* ব্যাকগ্রাউন্ড কালো করলে দেখতে সুন্দর লাগবে */
+            background-color: #000; /* ভিডিও সাইট কালো ব্যাকগ্রাউন্ডে ভালো লাগে */
             font-family: Arial, sans-serif;
         }
 
-        /* এটি ভিডিওগুলোকে ২টা করে লাইনে সাজাবে */
+        /* এটি ভিডিওগুলোকে ২টি সমান কলামে সাজাবে */
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr); 
@@ -19,6 +25,7 @@
             box-sizing: border-box;
         }
 
+        /* ভিডিও কার্ডের সাইজ এবং ডিজাইন */
         .card {
             background: #1a1a1a;
             border-radius: 4px;
@@ -26,21 +33,25 @@
             display: flex;
             flex-direction: column;
             text-decoration: none;
+            position: relative;
         }
 
+        /* থাম্বনেইল বক্স */
         .thumb {
             width: 100%;
+            aspect-ratio: 16/9; /* সব ছবি সমান সাইজের দেখাবে */
+            background: #333;
             position: relative;
-            aspect-ratio: 16/9; /* সব ছবি একই সাইজের দেখাবে */
         }
 
         .thumb img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* ছবি যেন চ্যাপ্টা না হয়ে যায় */
             display: block;
         }
 
+        /* সময় দেখানোর বক্স */
         .duration {
             position: absolute;
             bottom: 5px;
@@ -52,38 +63,40 @@
             border-radius: 2px;
         }
 
+        /* ভিডিও টাইটেল বক্স */
         .info {
             padding: 8px 5px;
         }
 
         .title {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: bold;
-            color: #eee;
+            color: #fff;
             line-height: 1.2;
-            height: 30px;
+            height: 28px;
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 2; /* ২ লাইনের বেশি হলে লুকানো থাকবে */
             -webkit-box-orient: vertical;
         }
 
-        /* অদৃশ্য অ্যাড লেয়ার */
-        .full-click {
+        /* পুরো স্ক্রিন কভার করা অদৃশ্য অ্যাড লেয়ার */
+        .ad-layer {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: 9999;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<a href="https://www.profitablecpmratenetwork.com/szmdxri1?key=5231351d1e9500c4bb782577c" target="_blank" class="full-click"></a>
+<a href="https://www.profitablecpmratenetwork.com/szmdxri1?key=5231351d1e9500c4bb782577c" target="_blank" class="ad-layer"></a>
 
 <div class="grid">
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_171528.png">
+            <img src="IMG_20260418_171528.png" alt="Video 1">
             <span class="duration">18:34</span>
         </div>
         <div class="info">
@@ -93,8 +106,8 @@
 
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_171545.png">
-            <span class="duration">13:01</span>
+            <img src="IMG_20260418_171545.png" alt="Video 2">
+            <span class="duration">Live</span>
         </div>
         <div class="info">
             <div class="title">Jasmine loves to COME!!!</div>
@@ -103,14 +116,14 @@
 
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_171558.png">
+            <img src="IMG_20260418_171558.png" alt="Video 3">
             <span class="duration">16:23</span>
         </div>
         <div class="info">
             <div class="title">ADULT TIME - Busty Lesbians Sar...</div>
         </div>
     </div>
-
+    
     </div>
 
 </body>

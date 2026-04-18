@@ -10,7 +10,26 @@
             overflow-x: hidden; 
             width: 100%; 
         }
-    </style>
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* এটি দুটি সমান কলাম তৈরি করবে */
+    gap: 10px; /* ভিডিওগুলোর মাঝে ফাঁকা জায়গা তৈরি করবে */
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%; /* প্রতিটি কার্ড তার কলামের পুরো জায়গা নিবে */
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+}</style>
 </head>
 <body>
 <a href="https://www.profitablecpmratenetwork.com/szmdxri1?key=5231351d1e9500c267880c4bb782577c" target="_blank" 

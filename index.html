@@ -3,50 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Exclusive Video Gallery</title>
+    <title>Gallery</title>
     <style>
-        html, body {
-            touch-action: pan-y;
-            margin: 0; padding: 0;
-            overflow-x: hidden; width: 100%;
-            background-color: #000; font-family: Arial, sans-serif;
-        }
-        /* ভিডিওগুলোকে ২ কলামে পাশাপাশি রাখার মেইন কোড */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 5px; padding: 5px;
-            width: 100%; box-sizing: border-box;
-        }
-        .card {
-            background: #1a1a1a; border-radius: 4px;
-            overflow: hidden; display: flex; flex-direction: column;
-            text-decoration: none; position: relative;
-        }
-        .thumb {
-            width: 100%; aspect-ratio: 16/9;
-            background: #333; position: relative;
-        }
-        .thumb img {
-            width: 100%; height: 100%;
-            object-fit: cover; display: block;
-        }
-        .duration {
-            position: absolute; bottom: 5px; right: 5px;
-            background: rgba(0,0,0,0.8); color: #fff;
-            font-size: 10px; padding: 2px 4px; border-radius: 2px;
-        }
+        html, body { touch-action: pan-y; margin: 0; padding: 0; overflow-x: hidden; width: 100%; background-color: #000; font-family: Arial, sans-serif; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; padding: 5px; width: 100%; box-sizing: border-box; }
+        .card { background: #1a1a1a; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; position: relative; }
+        .thumb { width: 100%; aspect-ratio: 16/9; background: #333; position: relative; }
+        .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .duration { position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.8); color: #fff; font-size: 10px; padding: 2px 4px; border-radius: 2px; }
         .info { padding: 8px 5px; }
-        .title {
-            font-size: 11px; font-weight: bold; color: #fff;
-            line-height: 1.2; height: 28px; overflow: hidden;
-            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-        }
-        /* অদৃশ্য অ্যাড লেয়ার */
-        .ad-layer {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 9999; cursor: pointer;
-        }
+        .title { font-size: 11px; font-weight: bold; color: #fff; line-height: 1.2; height: 28px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        .ad-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -54,86 +21,55 @@
 <a href="https://www.profitablecpmratenetwork.com/szmdxri1?key=5231351d1e9500c4bb782577c" target="_blank" class="ad-layer"></a>
 
 <div class="grid">
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_185406.png">
-            <span class="duration">12:34</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 01</div></div>
-    </div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185406.png"><span class="duration">12:34</span></div><div class="info"><div class="title">Video 01</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185434.png"><span class="duration">15:20</span></div><div class="info"><div class="title">Video 02</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185501.png"><span class="duration">08:45</span></div><div class="info"><div class="title">Video 03</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185523.png"><span class="duration">10:10</span></div><div class="info"><div class="title">Video 04</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185551.png"><span class="duration">14:05</span></div><div class="info"><div class="title">Video 05</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_185614.png"><span class="duration">19:30</span></div><div class="info"><div class="title">Video 06</div></div></div>
+    
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191704.png"><span class="duration">11:15</span></div><div class="info"><div class="title">Video 07</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191715.png"><span class="duration">16:40</span></div><div class="info"><div class="title">Video 08</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191727.png"><span class="duration">13:50</span></div><div class="info"><div class="title">Video 09</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191743.png"><span class="duration">09:25</span></div><div class="info"><div class="title">Video 10</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191759.png"><span class="duration">21:05</span></div><div class="info"><div class="title">Video 11</div></div></div>
+    
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191814.png"><span class="duration">12:30</span></div><div class="info"><div class="title">Video 12</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191828.png"><span class="duration">15:45</span></div><div class="info"><div class="title">Video 13</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191840.png"><span class="duration">08:10</span></div><div class="info"><div class="title">Video 14</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191856.png"><span class="duration">10:55</span></div><div class="info"><div class="title">Video 15</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191909.png"><span class="duration">14:20</span></div><div class="info"><div class="title">Video 16</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_191922.png"><span class="duration">18:00</span></div><div class="info"><div class="title">Video 17</div></div></div>
 
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_185434.png">
-            <span class="duration">15:20</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 02</div></div>
-    </div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192012.png"><span class="duration">11:10</span></div><div class="info"><div class="title">Video 18</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192028.png"><span class="duration">09:35</span></div><div class="info"><div class="title">Video 19</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192044.png"><span class="duration">13:50</span></div><div class="info"><div class="title">Video 20</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192058.png"><span class="duration">20:15</span></div><div class="info"><div class="title">Video 21</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192120.png"><span class="duration">16:40</span></div><div class="info"><div class="title">Video 22</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192141.png"><span class="duration">12:10</span></div><div class="info"><div class="title">Video 23</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192157.png"><span class="duration">15:25</span></div><div class="info"><div class="title">Video 24</div></div></div>
 
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_185501.png">
-            <span class="duration">08:45</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 03</div></div>
-    </div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192219.png"><span class="duration">14:05</span></div><div class="info"><div class="title">Video 25</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192237.png"><span class="duration">08:50</span></div><div class="info"><div class="title">Video 26</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192256.png"><span class="duration">19:30</span></div><div class="info"><div class="title">Video 27</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192315.png"><span class="duration">11:15</span></div><div class="info"><div class="title">Video 28</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192340.png"><span class="duration">16:40</span></div><div class="info"><div class="title">Video 29</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192359.png"><span class="duration">13:50</span></div><div class="info"><div class="title">Video 30</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192417.png"><span class="duration">09:25</span></div><div class="info"><div class="title">Video 31</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192455.png"><span class="duration">21:05</span></div><div class="info"><div class="title">Video 32</div></div></div>
 
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191704.png">
-            <span class="duration">11:10</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 04</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191715.png">
-            <span class="duration">14:05</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 05</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191727.png">
-            <span class="duration">19:30</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 06</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191743.png">
-            <span class="duration">10:15</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 07</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191759.png">
-            <span class="duration">16:40</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 08</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191814.png">
-            <span class="duration">13:50</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 09</div></div>
-    </div>
-
-    <div class="card">
-        <div class="thumb">
-            <img src="IMG_20260418_191828.png">
-            <span class="duration">21:05</span>
-        </div>
-        <div class="info"><div class="title">Exclusive Video 10</div></div>
-    </div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192516.png"><span class="duration">12:30</span></div><div class="info"><div class="title">Video 33</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192531.png"><span class="duration">15:45</span></div><div class="info"><div class="title">Video 34</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192607.png"><span class="duration">08:10</span></div><div class="info"><div class="title">Video 35</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192625.png"><span class="duration">10:55</span></div><div class="info"><div class="title">Video 36</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192644.png"><span class="duration">14:20</span></div><div class="info"><div class="title">Video 37</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192700.png"><span class="duration">18:00</span></div><div class="info"><div class="title">Video 38</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192713.png"><span class="duration">11:10</span></div><div class="info"><div class="title">Video 39</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192733.png"><span class="duration">09:35</span></div><div class="info"><div class="title">Video 40</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192748.png"><span class="duration">13:50</span></div><div class="info"><div class="title">Video 41</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_192958.png"><span class="duration">20:15</span></div><div class="info"><div class="title">Video 42</div></div></div>
+    <div class="card"><div class="thumb"><img src="IMG_20260418_193015.png"><span class="duration">16:40</span></div><div class="info"><div class="title">Video 43</div></div></div>
 </div>
 
 </body>
-</html>
+    </html>

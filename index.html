@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Video Gallery</title>
+    <title>Exclusive Video Gallery</title>
     <style>
         html, body {
             touch-action: pan-y;
@@ -11,7 +11,7 @@
             overflow-x: hidden; width: 100%;
             background-color: #000; font-family: Arial, sans-serif;
         }
-        /* এই অংশটি ভিডিওগুলোকে ২টি কলামে পাশাপাশি রাখবে */
+        /* ভিডিওগুলোকে ২ কলামে পাশাপাশি রাখার মেইন কোড */
         .grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr); 
@@ -42,6 +42,7 @@
             line-height: 1.2; height: 28px; overflow: hidden;
             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
         }
+        /* অদৃশ্য অ্যাড লেয়ার */
         .ad-layer {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             z-index: 9999; cursor: pointer;
@@ -79,7 +80,7 @@
 
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_185523.png">
+            <img src="IMG_20260418_191704.png">
             <span class="duration">11:10</span>
         </div>
         <div class="info"><div class="title">Exclusive Video 04</div></div>
@@ -87,7 +88,7 @@
 
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_185551.png">
+            <img src="IMG_20260418_191715.png">
             <span class="duration">14:05</span>
         </div>
         <div class="info"><div class="title">Exclusive Video 05</div></div>
@@ -95,10 +96,42 @@
 
     <div class="card">
         <div class="thumb">
-            <img src="IMG_20260418_185614.png">
+            <img src="IMG_20260418_191727.png">
             <span class="duration">19:30</span>
         </div>
         <div class="info"><div class="title">Exclusive Video 06</div></div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">
+            <img src="IMG_20260418_191743.png">
+            <span class="duration">10:15</span>
+        </div>
+        <div class="info"><div class="title">Exclusive Video 07</div></div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">
+            <img src="IMG_20260418_191759.png">
+            <span class="duration">16:40</span>
+        </div>
+        <div class="info"><div class="title">Exclusive Video 08</div></div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">
+            <img src="IMG_20260418_191814.png">
+            <span class="duration">13:50</span>
+        </div>
+        <div class="info"><div class="title">Exclusive Video 09</div></div>
+    </div>
+
+    <div class="card">
+        <div class="thumb">
+            <img src="IMG_20260418_191828.png">
+            <span class="duration">21:05</span>
+        </div>
+        <div class="info"><div class="title">Exclusive Video 10</div></div>
     </div>
 </div>
 
